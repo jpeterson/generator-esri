@@ -1,0 +1,20 @@
+{
+  "name": "yeoman-sandbox",
+  "version": "0.0.0",
+  "dependencies": {
+    "sass-bootstrap": "~2.3.0",
+    "requirejs": "~2.1.4",
+    "text": "~2.0.9",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1",
+    "backbone-amd": "~1.0.0",
+    "underscore-amd": "~1.5.1",
+    "dojo": "~1.8",
+    "dijit": "~1.8",
+    "dojox": "~1.8",
+    "dgrid": "~0.3.4",
+    "put-selector": "~0.2",
+    "xstyle": "~0.1"
+  },
+  "devDependencies": {}
+}

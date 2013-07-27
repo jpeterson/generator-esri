@@ -1,0 +1,86 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";	
+$bkg: "../images/bg_patterns/retina_wood.png";						// Page background image
+
+$sidebarWidth: 350px;												// Width of Sidebar
+$headerHeight: 75px;												// Height of Header
+$footerHeight: 50px;												// Height of Footer
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+html,
+body {
+	height: 100%;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: 100%;
+	/* Negative indent by footer height */
+	margin: 0 auto (-$footerHeight);
+	background: url($bkg);
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+	height: $footerHeight;
+	line-height: $footerHeight;
+	background: url($bkg);
+	text-align: center;
+}
+
+/* Set the fixed height of the header here */
+.header {
+	height: $headerHeight;
+	background: url($bkg);
+}
+
+/* Set the Sidebar properties here */
+.sidebar {
+	background-color: #fff;
+	border:solid #333 3px;
+	width: $sidebarWidth;
+
+	box-sizing: border-box;
+
+	h4 { text-align: center; }
+	/* iPhone (<5) and smaller */
+	@media only screen 
+	and ( max-width: 480px ) {
+		/* Hide Sidebar */
+		display:none;
+	}
+}
+
+/* Set the Map container properties here */
+.map {
+	border: solid #333 3px;
+	background: url("../images/bg_patterns/grey_wash_wall.png");
+	padding: 0;
+}
+
+/* This element sets the area on the page between the header and footer */
+.content {
+	position: absolute;
+	top: $headerHeight;
+	bottom: $footerHeight;
+	width: 100%;
+	background: url($bkg);
+}
+
+/* Utility class to make content fill page vertically */
+.vertical-fill {
+	height:100%;
+}
+
+/* This is the container for the map */
+.main {
+	padding-left: $sidebarWidth + 40;
+	/* iPhone (<5) and smaller */
+	@media only screen 
+		and ( max-width: 480px ) {
+		/* Reset padding to handle no sidebar */
+		padding-left: 20px;
+	}
+}
