@@ -55,18 +55,9 @@ EsriGenerator.prototype.gruntfile = function gruntfile() {
   this.copy('Gruntfile.js');
 };
 
-EsriGenerator.prototype.packageJSON = function packageJSON() {
-  this.copy('_package.json', 'package.json');
-};
-
 EsriGenerator.prototype.git = function git() {
   this.copy('gitignore', '.gitignore');
   this.copy('gitattributes', '.gitattributes');
-};
-
-EsriGenerator.prototype.bower = function bower() {
-  this.copy('bowerrc', '.bowerrc');
-  this.copy('_bower.json', 'bower.json');
 };
 
 EsriGenerator.prototype.jshint = function jshint() {
@@ -125,6 +116,7 @@ EsriGenerator.prototype.app = function app() {
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
+  this.copy('bowerrc', '.bowerrc');
 };
 
 EsriGenerator.prototype.projectfiles = function projectfiles() {
