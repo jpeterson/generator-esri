@@ -1,6 +1,4 @@
-generator-esri
-===
-Please Note!
+Woah there!
 ---
 This is a work in progress and probably is not ready for primetime production applications.
 What is it?
